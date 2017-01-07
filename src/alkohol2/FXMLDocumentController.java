@@ -24,7 +24,7 @@ import javafx.stage.Stage;
  */
 public class FXMLDocumentController implements Initializable {
 
-    private int _CalcDepth = 6;
+    private final int _CalcDepth = 6;
     private int _ComputingRightNowID = -1;
 
     @FXML
