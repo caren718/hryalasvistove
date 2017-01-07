@@ -454,6 +454,7 @@ public class FXMLDocumentController implements Initializable {
         boolean bol = tryComputeEverything();
         System.out.println("animation: " + bol);
         if (bol) {
+            System.out.println("lol");
             startAnimation();
         }
     }
