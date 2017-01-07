@@ -26,6 +26,7 @@ public class FXMLDocumentController implements Initializable {
 
     private final int _CalcDepth = 6;
     private int _ComputingRightNowID = -1;
+    //změna č. 4, protože 3 zmizela
     //zmena č. 3
 
     @FXML
