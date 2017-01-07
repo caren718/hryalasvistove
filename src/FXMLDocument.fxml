@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.canvas.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+
+<Pane prefHeight="650.0" prefWidth="1219.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="alkohol2.FXMLDocumentController">
+   <children>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" height="736.0" layoutX="-60.0" layoutY="-30.0" stroke="BLACK" strokeType="INSIDE" width="1354.0">
+         <fill>
+            <LinearGradient endX="0.5095238095238096" endY="0.16190476190476188">
+               <stops>
+                  <Stop color="#0000009c" />
+                  <Stop color="#0000004f" offset="0.007662835249042145" />
+                  <Stop color="#f4f4f4" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </fill>
+      </Rectangle>
+      <AnchorPane id="AnchorPane" prefHeight="587.0" prefWidth="1152.0">
+         <children>
+            <GridPane layoutX="21.0" layoutY="14.0" prefHeight="471.0" prefWidth="595.0">
+              <columnConstraints>
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="299.0" minWidth="10.0" prefWidth="241.0" />
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="381.0" minWidth="10.0" prefWidth="247.0" />
+                  <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" maxWidth="300.0" minWidth="10.0" prefWidth="120.0" />
+              </columnConstraints>
+              <rowConstraints>
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+              </rowConstraints>
+               <children>
+                  <Button mnemonicParsing="false" onAction="#btnComputeAction0" text="&lt;&lt; dopočítat" GridPane.columnIndex="2" />
+                  <Button mnemonicParsing="false" onAction="#btnComputeAction1" text="&lt;&lt; dopočítat" GridPane.columnIndex="2" GridPane.rowIndex="1" />
+                  <Button mnemonicParsing="false" onAction="#btnComputeAction2" text="&lt;&lt; dopočítat" GridPane.columnIndex="2" GridPane.rowIndex="2" />
+                  <Button mnemonicParsing="false" onAction="#btnComputeAction3" text="&lt;&lt; dopočítat" GridPane.columnIndex="2" GridPane.rowIndex="3" />
+                  <Button mnemonicParsing="false" onAction="#btnComputeAction4" text="&lt;&lt; dopočítat" GridPane.columnIndex="2" GridPane.rowIndex="4" />
+                  <Label text="Podíl alkoholu - původní (40%)" />
+                  <Label text="Podíl alkoholu výsledné tekutiny (10%)" GridPane.rowIndex="1" />
+                  <Label text="Objem původního alkoholu (200 ml)" GridPane.rowIndex="2" />
+                  <Label text="Objem výsledné kapaliny (800 ml)" GridPane.rowIndex="3" />
+                  <Label text="Objem přidaného džusu (600 ml)" GridPane.rowIndex="4" />
+                  <TextField fx:id="txtOrigPercentage" promptText="40" GridPane.columnIndex="1" />
+                  <TextField fx:id="txtOutputPercentage" promptText="10" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                  <TextField fx:id="txtOrigVolume" promptText="200" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+                  <TextField fx:id="txtOutputVolume" promptText="800" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+                  <TextField fx:id="txtJuiceValue" promptText="600" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+                  <Label text="Teoretický objem čistého alkoholu (80 ml)" GridPane.rowIndex="5" />
+                  <TextField fx:id="txtPureAlcoholValue" promptText="80" GridPane.columnIndex="1" GridPane.rowIndex="5" />
+                  <Button mnemonicParsing="false" onAction="#btnComputeAction5" text="&lt;&lt; dopočítat" GridPane.columnIndex="2" GridPane.rowIndex="5" />
+               </children>
+            </GridPane>
+            <Canvas fx:id="CanvasID" height="542.0" layoutX="736.0" layoutY="14.0" width="424.0" />
+         </children>
+      </AnchorPane>
+   </children>
+</Pane>
